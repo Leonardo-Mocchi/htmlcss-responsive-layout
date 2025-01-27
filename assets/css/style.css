@@ -1,0 +1,100 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    color: var(--gb-dark);
+}
+
+:root {
+    --gb-title: #ff9614;
+    --gb-title-bg: #ffffff;
+    --gb-recipe-name: #4e3969;
+    --gb-main-bg: #f6f5f3;
+    --gb-dark: #000000;
+    --gb-dark-soft: #a2a2a2;
+    --gb-light: #f9f8fb;
+    --gb-footer-bg: #7c69a4;
+}
+
+/* #endregion common */
+
+/* #region utilities */
+
+/* layout */
+.head_foot_align {
+    margin: 2rem;
+}
+
+/* /layout */
+
+/* text format */
+/* /text format */
+
+/* buttons */
+/* /buttons */
+
+
+
+
+/* #endregion utilities */
+
+
+
+
+/* #region header */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gb-title-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    h1 {
+        font-family: 'Nerko One', cursive;
+        color: var(--gb-title);
+        font-size: 60px;
+        text-shadow: 2px 2px var(--gb-dark-soft);
+        text-wrap: nowrap;
+    }
+}
+
+/* #endregion header */
+
+
+/* #region main */
+
+main {
+    margin-top: 10rem;
+    background-color: var(--gb-main-bg);
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+footer {
+    background-color: var(--gb-footer-bg);
+    color: var(--gb-light);
+}
+
+/* #endregion footer */
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    place:holder;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: unset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    place:holder;
+}
+
+/* /media queries */
