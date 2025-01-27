@@ -239,7 +239,6 @@ footer {
 
 @media screen and (max-width: 650px) {
     header {
-
         h1 {
             font-size: 9.3vw;
         }
@@ -252,12 +251,40 @@ footer {
     .no_mobile {
         display: none;
     }
+
+    main {
+        #full_recipe {
+            div {
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
 }
 
 /* mobile -*/
 
-@media screen and (max-width: 576px) {
-    place:holder;
+@media screen and (min-width: 576px) {
+    main {
+        #social {
+            .card {
+                padding: 0 2rem;
+                border-radius: 3rem;
+            }
+        }
+
+        #full_recipe {
+            margin-top: 2rem;
+
+            img {
+                display: inline;
+                float: left;
+                margin: 0.25rem;
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 /* /large mobile -*/
@@ -301,7 +328,7 @@ footer {
     main {
         #social {
             .card {
-                padding: 0.1rem 3.2rem;
+                padding: 0 3rem;
                 border-radius: 3rem;
             }
         }
@@ -388,6 +415,8 @@ footer {
     }
 }
 
+/* /desktop */
+
 @media screen and (min-width: 1275px) {
 
     main {
@@ -403,7 +432,7 @@ footer {
     }
 }
 
-/* /desktop */
+/* /desktop + */
 
 
 /* #endregion media queries */
