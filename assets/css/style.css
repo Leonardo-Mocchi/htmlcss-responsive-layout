@@ -22,6 +22,7 @@
 
 /* #endregion common */
 
+
 /* #region utilities */
 
 /* layout */
@@ -41,6 +42,20 @@ h2 {
     font-size: 36px;
 }
 
+h3 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.card {
+    background-color: var(--gb-title-bg);
+    box-shadow: 0 0 10px var(--gb-dark-soft);
+    border-radius: 0.5rem;
+}
+
 .description {
     color: var(--gb-dark-soft);
 }
@@ -48,7 +63,10 @@ h2 {
 .recipe_title {
     color: var(--gb-recipe-name);
     font-size: 32px;
+    padding-bottom: 1.25rem;
 }
+
+
 
 /* /text format */
 
@@ -57,7 +75,9 @@ h2 {
 
 /* #endregion utilities */
 
-/* #region header */
+
+/* #region body */
+
 header {
     display: flex;
     justify-content: center;
@@ -75,31 +95,61 @@ header {
     }
 }
 
-/* #endregion header */
-
-
-/* #region main */
+/* /header */
 
 main {
-    padding-top: 8rem;
+    padding-top: 5.5rem;
     background-color: var(--gb-main-bg);
+
+    .short_recipe {
+        display: flex;
+        flex-direction: column;
+
+        #recipe_vid {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #short_recipe_text {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            h3 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
-/* #endregion main */
+/* /main */
 
-/* #region footer */
+
 
 footer {
     background-color: var(--gb-footer-bg);
+    margin-top: 10rem;
+    padding: 1rem;
 
     * {
         color: var(--gb-light);
     }
 }
 
+/* /footer */
 
+/* #endregion body */
 
-/* #endregion footer */
 
 /* #region media queries */
 @media screen and (max-width: 650px) {
@@ -143,6 +193,7 @@ footer {
 
     .recipe_title {
         font-size: 56px;
+        padding-top: 0.5rem;
     }
 }
 
