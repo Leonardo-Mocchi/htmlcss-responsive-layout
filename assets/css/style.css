@@ -23,25 +23,27 @@
 /* #region utilities */
 
 /* layout */
-.head_foot_align {
+.content_align {
     margin: 2rem;
 }
 
 /* /layout */
 
 /* text format */
+.description {
+    color: var(--gb-dark-soft);
+}
+
+.recipe_title {
+    color: var(--gb-recipe-name);
+}
+
 /* /text format */
 
 /* buttons */
 /* /buttons */
 
-
-
-
 /* #endregion utilities */
-
-
-
 
 /* #region header */
 header {
@@ -51,6 +53,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
 
     h1 {
         font-family: 'Nerko One', cursive;
@@ -67,7 +70,7 @@ header {
 /* #region main */
 
 main {
-    margin-top: 10rem;
+    padding-top: 8rem;
     background-color: var(--gb-main-bg);
 }
 
@@ -77,15 +80,38 @@ main {
 
 footer {
     background-color: var(--gb-footer-bg);
-    color: var(--gb-light);
+
+    * {
+        color: var(--gb-light);
+    }
 }
+
+
 
 /* #endregion footer */
 
-/* media queries */
+/* #region media queries */
+@media screen and (max-width: 650px) {
+    header {
+        margin: 1.5vw;
+
+        h1 {
+            font-size: 9.3vw;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     place:holder;
 }
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+    place:holder;
+}
+
+/* /large mobile */
 
 @media screen and (min-width: 768px) {
     header {
@@ -93,8 +119,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
+/* /tablet */
+
+@media screen and (min-width: 992px) {
     place:holder;
 }
 
-/* /media queries */
+/* /desktop */
+
+
+/* #endregion media queries */
