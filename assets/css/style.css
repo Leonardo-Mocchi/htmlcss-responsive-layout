@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     color: var(--gb-dark);
+    font-size: 18px;
+    line-height: 2.25rem;
 }
 
 :root {
@@ -30,12 +32,22 @@
 /* /layout */
 
 /* text format */
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
 .description {
     color: var(--gb-dark-soft);
 }
 
 .recipe_title {
     color: var(--gb-recipe-name);
+    font-size: 32px;
 }
 
 /* /text format */
@@ -58,7 +70,6 @@ header {
     h1 {
         font-family: 'Nerko One', cursive;
         color: var(--gb-title);
-        font-size: 60px;
         text-shadow: 2px 2px var(--gb-dark-soft);
         text-wrap: nowrap;
     }
@@ -93,7 +104,6 @@ footer {
 /* #region media queries */
 @media screen and (max-width: 650px) {
     header {
-        margin: 1.5vw;
 
         h1 {
             font-size: 9.3vw;
@@ -101,8 +111,12 @@ footer {
     }
 }
 
+/* /extra rules for very small vp */
+
 @media screen and (max-width: 768px) {
-    place:holder;
+    .no_mobile {
+        display: none;
+    }
 }
 
 /* mobile */
@@ -117,12 +131,19 @@ footer {
     header {
         justify-content: unset;
     }
+
+    .recipe_title {
+        font-size: 40px;
+    }
 }
 
 /* /tablet */
 
 @media screen and (min-width: 992px) {
-    place:holder;
+
+    .recipe_title {
+        font-size: 56px;
+    }
 }
 
 /* /desktop */
